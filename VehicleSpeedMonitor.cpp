@@ -1,5 +1,5 @@
 #include "VehicleSpeedMonitor.h"
-void SpeedMonitpr::monitor(){
+void SpeedMonitor::monitor(){
             if(_speedThreshold  < 1 || _speedThreshold > 100){
               cout<<"_speedThreshold value must be in the ramge {1-100} "<<_speedThreshold<<endl;
             }
