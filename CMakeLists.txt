@@ -19,6 +19,7 @@ add_compile_options("--coverage")
 add_executable(
   unittestcode
   TestChallenge.cpp
+  VehicleSpeedMonitor.cpp
   TestChallengeTest.cpp
   VechicleSpeedMonitorTest.cpp
  
