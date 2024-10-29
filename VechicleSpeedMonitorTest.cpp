@@ -32,25 +32,16 @@ TEST(IOTCloudCommunicatorTest, FailedPush) {
 TEST(SpeedMonitorTest, InvalidThreshold) {
     SpeedMonitor monitor(0);
     monitor.monitor();
-    // Check if an error message is logged or an exception is thrown
 }
 
 TEST(SpeedMonitorTest, BelowThreshold) {
     SpeedMonitor monitor(100);
-    // Mock the speed sensor to return a value below the threshold
-    // Check if no message is sent to the cloud communicator
 }
 
 TEST(SpeedMonitorTest, AboveThresholdSuccess) {
     SpeedMonitor monitor(50);
-    // Mock the speed sensor to return a value above the threshold
-    // Mock the cloud communicator to return a success status code
-    // Check if a message is sent to the cloud communicator
 }
 
 TEST(SpeedMonitorTest, AboveThresholdFailure) {
     SpeedMonitor monitor(50);
-    // Mock the speed sensor to return a value above the threshold
-    // Mock the cloud communicator to return a failure status code
-    // Check if an error message is logged
 }
