@@ -19,7 +19,7 @@ add_compile_options("--coverage")
 add_executable(
   unittestcode
   TestChallenge.cpp
-  TestChallengeTests.cpp
+  TestChallengeTest.cpp
  
  )
 target_link_libraries(
