@@ -20,6 +20,7 @@ add_executable(
   unittestcode
   TestChallenge.cpp
   TestChallengeTest.cpp
+  VechicleSpeedMonitorTest.cpp
  
  )
 target_link_libraries(
