@@ -1,0 +1,6 @@
+,,,
+TestCaseName,Description,Input/Preconditons,Expected Output
+monitorThresholdValidation,Ensure that an error message is printed when speedThreshold is outside the valid range (1–100).,Instantiate SpeedMonitor with speedThreshold set to 0 or 101.,speedThreshold value must be in the ramge {1-100}
+monitorNoMessageForLowSpeed,Confirm that pushMessage is not called when currentSpeed is below speedThreshold, Set speedThreshold to a value greater than the currentSpeed returned by BNFSpeedSensor,pushMessage is not called
+monitorSendMessageForHighSpeed,Verify that a message is sent to pushMessage when currentSpeed exceeds speedThreshold,Set speedThreshold to a value lower than currentSpeed,"pushMessage is called with a message formatted as: ""Current Speed in Miles(converted speed from KMPH to MPH))"""
+monitorErrorHandlingForPushMessage,Ensure that an error message is printed when pushMessage returns a status code indicating failure (400+), pushMessage to return a status code of 401 or above.,"Communitcation Error Message ""Error In Communication Unable to Contact Server""."
